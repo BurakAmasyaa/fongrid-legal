@@ -16,16 +16,19 @@
 <body>
   <main>
     <h1>FonGrid Gizlilik Politikası</h1>
-    <p class="muted">Yürürlük tarihi: 30 Temmuz 2026</p>
+    <p class="muted">Yürürlük tarihi: 2 Ağustos 2026</p>
 
     <h2>Toplanan veriler</h2>
-    <p>FonGrid üyelik, geliştirici sunucusu, analiz SDK'sı, reklam SDK'sı veya izleme teknolojisi kullanmaz. Geliştirici; ad, e-posta, konum, cihaz kimliği, finansal hesap bilgisi ya da kullanım analitiği toplamaz. Girilen fon kodu, yalnızca istenen veriyi getirmek için TEFAS'a iletilen bir sorgudur. Portföy sekmesinde girilen adet, değer ve tarih bilgisi cihaz dışına hiç iletilmez.</p>
+    <p>FonGrid üyelik, geliştirici sunucusu, analiz SDK'sı, reklam SDK'sı veya izleme teknolojisi kullanmaz. Geliştirici; ad, e-posta, konum, cihaz kimliği, finansal hesap bilgisi ya da kullanım analitiği toplamaz. Girilen fon kodu, yalnızca istenen veriyi getirmek için TEFAS'a iletilen bir sorgudur. Portföy sekmesinde girilen adet, değer ve tarih bilgisi geliştiriciye ait hiçbir sunucuya iletilmez; yalnızca kullanıcı isterse kendi iCloud hesabına yedeklenir.</p>
 
     <h2>Ağ istekleri</h2>
     <p>Kullanıcının girdiği fon kodu, ilgili fon verisini getirmek amacıyla cihazdan doğrudan TEFAS'a HTTPS isteği içinde gönderilir. Bu sorgu geliştiriciye ait bir sunucuya iletilmez, kullanıcı kimliğiyle ilişkilendirilmez ve takip amacıyla kullanılmaz. TEFAS, fon kodunu ve bağlantıya ilişkin teknik bilgileri kendi koşulları ve gizlilik uygulamaları kapsamında işleyebilir.</p>
 
     <h2>Cihazda saklama</h2>
-    <p>Seçilen fon kodları, son başarılı TEFAS yanıtındaki herkese açık fon adı/fiyat/dönem getirileri/kategori/risk/temel gösterge bilgisi ile alınma zamanı, ve kullanıcının Portföy sekmesinde kendi beyanıyla girdiği adet/değer/tarih bilgisi yalnızca cihazdaki UserDefaults alanında ve widget ile paylaşılabilmesi için FonGrid App Group alanında saklanır. Fiyat geçmişi kalıcı olarak saklanmaz. Önbellekteki değerler uygulamada eski kayıt olarak açıkça işaretlenir. Bu kayıtlar başka cihazlarla eşzamanlanmaz ve geliştirici tarafından erişilemez.</p>
+    <p>Seçilen fon kodları, son başarılı TEFAS yanıtındaki herkese açık fon adı/fiyat/dönem getirileri/kategori/risk/temel gösterge bilgisi ile alınma zamanı, ve kullanıcının Portföy sekmesinde kendi beyanıyla girdiği adet/değer/tarih bilgisi yalnızca cihazdaki UserDefaults alanında ve widget ile paylaşılabilmesi için FonGrid App Group alanında saklanır. Fiyat geçmişi kalıcı olarak saklanmaz. Önbellekteki değerler uygulamada eski kayıt olarak açıkça işaretlenir. Bu kayıtlar geliştirici tarafından erişilemez.</p>
+
+    <h2>iCloud yedekleme (isteğe bağlı)</h2>
+    <p>Ayarlar'dan iCloud Yedekleme açılırsa, yalnızca seçilen fon kodları, grid boyutu ve girilen portföy bilgisi cihazda oturum açık olan Apple hesabının özel iCloud alanına (iCloud Key-Value Storage) yazılır ve aynı hesaptaki diğer cihazlarla eşzamanlanır. Bu özellik varsayılan olarak kapalıdır ve istendiği zaman kapatılabilir. FonGrid ayrı bir hesap oluşturmaz, şifre istemez ve Apple hesabına ait kimlik bilgisine erişmez. Veriler Apple'ın altyapısında kullanıcının kendi hesabı altında tutulur; geliştiricinin bu veriye erişimi yoktur ve geliştiriciye ait herhangi bir sunucuya iletilmez. Kapatıldığında sonraki değişiklikler iCloud'a gönderilmez; iCloud'daki kayıtlar cihaz ayarlarındaki Apple hesabı yönetimi üzerinden silinebilir.</p>
 
     <h2>Saklama süresi ve silme</h2>
     <p>Fon kodları, veri önbelleği ve girilen portföy bilgisi kullanıcı silene veya uygulamayı cihazdan kaldırana kadar cihazda kalır. Ayarlar içindeki Tüm Fonları Sil işlemi fon kodlarını, önbelleği ve tüm portföy verisini kaldırır; Portföy sekmesindeki Varlığı Kaldır işlemiyle tek bir fonun portföy kaydı ayrıca silinebilir.</p>
